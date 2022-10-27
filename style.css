@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --primary-color: #323238; 
+    --color-button: #E1E1E6 ;
+    --color-button-hover: #02799D; 
+    --bg-color: #FFFFFF;
+    font-size: 62.5%;
+    
+}
+
+.dark-mode:root {
+    --bg-color: #121214;
+    --primary-color-dark: #C4C4CC;
+    --color-button: #29292E;
+    --color-button-hover:#0A3442;
+   
+}
+
+body {
+    
+    color: var(--primary-color-dark);
+
+    font-family:'Roboto', sans-serif ;
+}
+
+.dark-mode body{
+    background-color: var(--bg-color);
+}
+
+
+main {
+    margin-top: 25.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19.2rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+   
+
+}
+
+.time {
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-mode .time{
+    color: var(--primary-color-dark);
+}
+
+.hide {
+    display: none;
+}
+.controls {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+   
+}
+
+.dark-mode .controls path{
+   fill: var(--primary-color-dark);
+}
+
+.buttonSoung {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+
+}
+
+.dark-mode .buttonSoung path{
+    fill: var(white);
+}
+
+.buttonSoung button {
+    background-color: var(--color-button);
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+}
+
+.buttonSoung button:hover {
+    background-color: var(--color-button-hover);
+}
+
+.dark-mode .buttonSoung path{
+    fill: white;
+}
+
+
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 6.4rem;
+}
+
+.estilo{
+    margin-top: 1.2rem;
+    
+        -webkit-appearance: none;
+        background: #C4C4CC;
+        outline: none;
+        width: 80%;
+        height: 20px;
+        border-radius: 9px;   
+
+}
+
+.estilo::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+
+    background: #29292E;
+    cursor: pointer;
+}
